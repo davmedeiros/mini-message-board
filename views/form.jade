@@ -3,7 +3,7 @@ extends layout
 block content 
   a(href="/") Go back 
   h1= title
-  form(action="/new", method="post") 
+  form(action="/new", method="post" autocomplete="off") 
     label(for="messageUser") User
     input(type="text", name="messageUser", id="messageUser", placeholder="username")
     label(for="messageText") Message
